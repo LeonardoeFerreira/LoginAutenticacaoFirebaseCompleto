@@ -7,4 +7,18 @@
     <color name="teal_700">#01C7D2</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Cores despesas !-->
+    <color name="purple_700_despesas">#FF706A</color>
+    <color name="purple_500_despesas">#E66560</color>
+    <color name="purple_200_despesas">#FF706A</color>
+
+
+
+    <!-- Cores Receitas !-->
+    <color name="purple_700_receita">#00d39e</color>
+    <color name="purple_500_receita">#00be8b</color>
+    <color name="purple_200_receita">#00d39e</color>
+
 </resources>

@@ -34,7 +34,7 @@
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_receita"
-            android:onClick="adicionarDespesa"
+            android:onClick="adicionarReceita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_adicionar_branco_24"

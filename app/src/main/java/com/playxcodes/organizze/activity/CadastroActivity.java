@@ -19,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.playxcodes.organizze.R;
 
 import com.playxcodes.organizze.config.ConfiguracaoFirebase;
+import com.playxcodes.organizze.helper.Base64Custom;
 import com.playxcodes.organizze.model.Usuario;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -86,6 +87,10 @@ public class CadastroActivity extends AppCompatActivity {
                 //verificar se o cadastro deu certo
                 if(task.isSuccessful()){
                     //Toast.makeText(CadastroActivity.this,"Sucesso ao cadastrar usuario!", Toast.LENGTH_SHORT).show();
+
+                    String idUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setIdUsuario(idUsuario);
+                    usuario.salvar();
                      finish();
                 }else{
 
